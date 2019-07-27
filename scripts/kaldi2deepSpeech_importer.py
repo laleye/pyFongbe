@@ -1,3 +1,9 @@
+"""
+Usage: $ python3 check_characters.py wavfolder transcript_file datatype
+ e.g.  $ python3 kaldi2deepSpeech_importer.py Data/train/wav Data/train/text train
+"""
+
+
 import argparse, os
 import wave, contextlib, csv
 
