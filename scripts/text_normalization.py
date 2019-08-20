@@ -3,7 +3,7 @@ import os, unicodedata, argparse, sys, datetime
 class text_normalization(object):
     
     def __init__(self):
-        self.special_characters = {'ὲ':'ε', 'έ': 'ε', 'ɛ̆': 'ε', 'ε': 'ε', 'ɖ': 'ɖ', 'ɔ́':'ɔ', 'ɔ': 'ɔ', 'ɔ̆': 'ɔ', 'ɔ̀': 'ɔ', 'ĭ': 'i', 'í': 'i', 'ì': 'i', 'ĕ': 'e', 'ŭ': 'u', 'ĕ': 'e', 'é': 'e', 'è': 'e', 'ı́': 'i', 'ˋ': '', "'": ''}
+        self.special_characters = {'ὲ':'ε', 'έ': 'ε', 'ɛ̆': 'ε', 'ε': 'ε', 'ɖ': 'ɖ', 'ɔ́':'ɔ', 'ɔ': 'ɔ', 'ɔ̆': 'ɔ', 'ɔ̀': 'ɔ', 'ĭ': 'i', 'í': 'i', 'ì': 'i', 'ĕ': 'e', 'ŭ': 'u', 'ĕ': 'e', 'é': 'e', 'è': 'e', 'ı́': 'i', 'ˋ': '', "'": '', 'ú': 'u', 'ù': 'u', 'ó': 'o', 'â': 'a', 'ô', 'o', 'ò': 'o'}
         self.french_list = 'abcdefghijklmnopqrstuvwxyz'
     
     def remove_accents_from_file(self, input_):
